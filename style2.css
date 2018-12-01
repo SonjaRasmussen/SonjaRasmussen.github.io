@@ -57,6 +57,7 @@ a {
 #contact-info,
 #bio-image{
     float: left;
+    padding: 0px;
 }
 
 #main-bio{
@@ -76,9 +77,9 @@ a {
 P.drop-cap:first-letter {
     float: left;
     width: 0.7em;
-    font-size: 250%;
+    font-size: 300%;
     font-family: algerian, courier;
-    line-height: 80%;
+    line-height: 90%;
 }
 
 
