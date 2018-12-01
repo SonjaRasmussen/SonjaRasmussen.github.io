@@ -1,0 +1,84 @@
+
+
+
+.topnav {
+    background-color: rgb(125, 182, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: rgb(168, 175, 199);
+    color: black;
+}
+
+body {
+    background-color: rgb(206, 221, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(206, 221, 236);
+    background-color: black;
+    margin:0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 200%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 100%;
+    text-align: justify;
+}
+a {
+    color: rgb(10, 99, 158);
+}
+.container {
+        width: auto;
+        margin: 2px;
+}
+
+#main-bio,
+#contact-info,
+#bio-image{
+    float: left;
+}
+
+#main-bio{
+    width: 70%;
+}
+
+#contact-info {
+    width: 30%;
+}
+
+#bio-image {
+    margin-right: 20px;
+    width: 250px;
+    height: 200px;
+}
+   
+P.drop-cap:first-letter {
+    float: left;
+    width: 0.7em;
+    font-size: 250%;
+    font-family: algerian, courier;
+    line-height: 80%;
+}
+
+
