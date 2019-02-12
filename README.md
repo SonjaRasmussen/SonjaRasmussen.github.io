@@ -1,2 +1,2 @@
-# Bootstrap-Portfolio
-Second Assignment with bootstrap
+Personal Portfolio Page
+SonjaRasmussen.github.io
