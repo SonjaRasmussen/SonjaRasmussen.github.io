@@ -79,12 +79,33 @@ h3 {
   background: #4aaaa5;
 }
 
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling */
+
+
+
+
 /* footer */
 
 footer {
-  padding: 30px 0;
+  padding: 12px 0;
   clear: both;
-  font-size: 12px;
+  font-size: 18px;
   color: #ffffff;
   color: #cccccc;
   text-align: center;
@@ -147,7 +168,9 @@ body .container {
   margin-top: 10px;
   margin-right: 25px;
 }
-
+img.img-fluid{
+  border: 3px solid  #5e7f7e;
+}
 /* contact page */
 
 #contact-form ul {
@@ -192,7 +215,53 @@ input[type=submit] {
   border: 0 none;
 }
 
+.main-section{
+  widows: 75%;
+}
 
+
+/* sidebar on contact page */
+
+.card-text{
+  padding-left: 20px;
+}
+
+.card-header{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+
+}
+
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
 
 @media only screen and (max-width: 640px){
   #masthead{ 
