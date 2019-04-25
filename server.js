@@ -30,13 +30,10 @@ mailOpts = {
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
 };
 smtpTrans.sendMail(mailOpts, function(error, response){
-    if(error){
+    if(error) {
         console.log("Error: " + error);
-        res.render('contact-failure');
     }
-    else{
-        res.render("contact-success");
-    }
+    res.redirect("https://sonjarasmussen.github.io/");
 });
 });
 
