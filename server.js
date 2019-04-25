@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+require('dotenv').config();
 
 
 const nodemailer = require('nodemailer');
@@ -19,19 +19,22 @@ app.post('/contact', function(req, res){
         port: 465,
         secure: true,
         auth:{
-            user:GMAIL_USER,
-            pass: GMAIL_PASS
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASS
         }
     });
 
+    console.log("user: ", process.env.GMAIL_USER);
+    console.log("pass: ", process.env.GMAIL_PASS);
 mailOpts = {
-    from: req.body.name + ' &lt;' + req.body.email + "&gt",
-    to: GMAIL_USER,
+    from: req.body.name + ' &lt;' + req.body.email + "&gt;",
+    to: process.env.GMAIL_USER,
     subject: "New message from contact form at Sonja Rasmussen",
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
 };
 smtpTrans.sendMail(mailOpts, function(error, response){
     if(error){
+        console.log("Error: " + error);
         res.render('contact-failure');
     }
     else{
@@ -40,4 +43,4 @@ smtpTrans.sendMail(mailOpts, function(error, response){
 });
 });
 
-app.listen(port, ()=> console.log("App is listening on port" + ${port}))
+app.listen(port, ()=> console.log("App is listening on port " + port))
