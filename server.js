@@ -1,12 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-require('dotenv').config();
-
-
 const nodemailer = require('nodemailer');
-
 const app = express()
-const port = 8000
+const port = process.env.PORT
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.get('/', (req, res)=> res.send("Hello World"))
