@@ -171,6 +171,11 @@ body .container {
 img.img-fluid{
   border: 3px solid  #5e7f7e;
 }
+
+
+.card-img-top{
+  border-bottom: 3px solid #5e7f7e;
+}
 /* contact page */
 
 #contact-form ul {
