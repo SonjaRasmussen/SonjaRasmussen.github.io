@@ -113,8 +113,9 @@ $(document).ready(function(e) {
       email: $("#email").text(),
       message: $("#message").text()
     };
-    $.post("/contact", data, function(data, status) {
-      window.alert("Thanks for yer message!");
+    $.post("https://sonjarasmussen.herokuapp.com/contact", data, function(data, status) {
+      window.alert("Thanks for yourr message, I'll respond as soon as possible!");
+      window.location = "/";
     });
   })
 });
